@@ -7,17 +7,15 @@ Hashing method used is MD5.
 For assymetric encryption RSA is used and for symmetric encryption AES is used.
 Public key is passed to client via socket connection.
 
-The code is tested and running in remote.cs.binghamton.edu
-
 Commands to run server - 
 1. Compile - javac server/server.java 
-2. Run by providing port number - java server/server.java 3550
+2. Run by providing port number - java server/server.java port_number
 
 Commands to run client - 
 1. Compile - javac client/client.java 
-2. Run by providing on which remote the server is running and port number of server -  java client/client.java remote02.cs.binghamton.edu 3550
+2. Run by providing on which remote the server is running and port number of server -  java client/client.java server_name port_number
 
-Please note in passwd and balance files username and details like password or balance should be seperated by single space bar. For example - 
+Please note in passwd and balance files username and details like hashed password or balance. For example - 
 
 alice 81dc9bdb52d04dc20036dbd8313ed055
 bob 674f3c2c1a8a6f90461e8a66fb5550ba
